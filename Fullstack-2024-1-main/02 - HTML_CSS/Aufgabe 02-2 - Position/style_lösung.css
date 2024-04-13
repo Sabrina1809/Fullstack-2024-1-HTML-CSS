@@ -1,0 +1,46 @@
+.parent {
+    padding: 5px;
+    background-color:cornflowerblue;
+    height: 150vh;
+
+    position: relative;
+
+}
+
+.child-one {
+    background-color: greenyellow;
+    
+    position: fixed;
+    bottom: 0;
+}
+
+.child-two {
+    background-color:coral;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.child-three {
+    background-color:fuchsia;
+
+    position: sticky;
+    top: 0;
+}
+
+.child {
+    padding: 5px;
+}
+
+.modal {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+
+    position: fixed;
+    top: 40vh;
+    left: calc(50vw - 50px);
+    z-index: 1;
+}

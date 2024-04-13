@@ -1,0 +1,72 @@
+/* Variables */
+:root {
+    --main-width-container: 100vw;
+    --main--height-container: 47.5vh;
+    --main-height-bars: 5vh;
+    --main-test-border: 2px solid rgb(0, 255, 42); 
+    --main-navbar-border: 2px solid lightcoral;
+}
+
+/* Document general css */
+
+body {
+    margin: 0px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page Css */
+.page {
+    width: 100vw;
+    height: 200vh;
+}
+
+
+/* Nav-Bar CSS */
+#navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+    justify-content: flex-end;
+    align-items: center;
+    
+    height: var(--main-height-bars);
+    width: var(--main-width-container);
+    border: var(--main-navbar-border);
+    position: sticky;
+    top: 0px;
+}
+
+.nav-element > a {
+    text-decoration: none;
+    width: 1vw;
+    margin-right: 5vw;
+}
+
+#intro {
+    height: var(--main--height-container);
+    width: var(--main-width-container);
+    border: var(--main-test-border);
+}
+#example-cards {
+    height: var(--main--height-container);
+    width: var(--main-width-container);
+    border: var(--main-test-border);
+}
+
+#products {
+    height: var(--main--height-container);
+    width: var(--main-width-container);
+    border: var(--main-test-border);
+}
+#reviews {
+    height: var(--main--height-container);
+    width: var(--main-width-container);
+    border: var(--main-test-border);
+}
+#footer {
+    height: var(--main-height-bars);
+    width: var(--main-width-container);
+    border: var(--main-test-border);
+}

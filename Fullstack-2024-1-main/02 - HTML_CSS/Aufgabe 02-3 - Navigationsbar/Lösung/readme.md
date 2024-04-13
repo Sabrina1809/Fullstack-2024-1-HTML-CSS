@@ -1,0 +1,3 @@
+# Anmerkung zur Lösung
+
+Die Lösung ist um mehrere Bereiche erweitert. Im **html** Dokument handelt es sich um die Zeilen 18 bis 22. Diese haben eine entsprechende **id** und sind mit Hilfe von **Variablen** gestylt. In den Bereichen könnte jetzt Inhalt rein (der natürlich auch gestylt werden muss). Die Bereiche können natürlich auch in der **CSS** erhöht/gesenkt werden. Probiere doch aus, ob du deine anfängliche reine **html** Bioseite nun mit **CSS** ordentlicher und mit etwas Layout gestalten kannst.

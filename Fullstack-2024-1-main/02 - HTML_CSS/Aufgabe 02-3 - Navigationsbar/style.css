@@ -1,0 +1,28 @@
+body {
+  height: 110vh;
+  font-size: 100%;
+  margin: 0px;
+}
+.nav-bar {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2vw;
+  
+  position: sticky;
+  height: 4vh;
+  top: 0px;
+  overflow: auto;
+  border: 2px solid purple;
+
+}
+
+li {
+  font-size: 125%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

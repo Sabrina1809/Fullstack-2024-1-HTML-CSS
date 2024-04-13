@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Roboto:wght@300&family=Space+Grotesk&display=swap');
+
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(71,106,137);
+    background: linear-gradient(190deg, rgba(71,106,137,1) 24%, rgba(71,32,108,1) 49%, rgba(69,232,252,1) 80%);
+    
+
+}
+
+/* Die App soll das Flex Layout haben */
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-group-item {
+    width: 30vw;
+    background-color: transparent;
+    margin: 5px;
+
+}
+
+.list-group-item:hover {
+    scale: 1.2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.todo-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    margin-top: 3vh;
+    width: 35vw;
+}

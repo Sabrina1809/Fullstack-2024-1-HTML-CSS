@@ -1,0 +1,28 @@
+.parent {
+    padding: 5px;
+    background-color:cornflowerblue;
+    height: 150vh;
+}
+
+.child-one {
+    background-color: greenyellow;
+}
+
+.child-two {
+    background-color:coral;
+}
+
+.child-three {
+    background-color:fuchsia;
+}
+
+.child {
+    padding: 5px;
+}
+
+.modal {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+}

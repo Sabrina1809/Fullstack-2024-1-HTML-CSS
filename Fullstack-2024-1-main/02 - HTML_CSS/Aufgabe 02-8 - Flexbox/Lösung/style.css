@@ -1,0 +1,72 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    height: 100vh; 
+    margin: 0;
+}
+
+.parent div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;  
+    font-weight: 800;
+    width: 150px;
+    min-height: 150px;
+    background-color: aquamarine;
+    border-radius: 10%; 
+
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*transition: width 3s, height 3s, transform 3s; */
+    transition: transform 3s;
+
+    cursor: pointer;
+}
+
+/* .parent {
+    height: 100%;
+    
+    display: flex;    
+    justify-content:center;
+    align-items: center; 
+    flex-direction: row-reverse;
+    flex-wrap: wrap; 
+    
+} */
+
+.parent div:nth-child(odd) {
+    background-color: fuchsia;
+  
+}
+/* 7.2 */
+.parent div:nth-child(even) {
+    flex-grow: 2;
+    order: 2;
+}
+
+.parent div:hover {
+    /* width: 200px;
+    height: 200px; */
+    transform: rotate(180deg) scale(1.5);  
+    /* color: fuchsia; */
+}
+
+.parent div:hover::after {
+    content: "🤗";
+    font-size: 4em;
+}
+
+.parent div:hover span {
+    display: none;
+}
+/* 7.3 */
+@media only screen and (min-width: 768px) {
+    .parent {
+      background-color: darkgreen;
+      /* Bei größeren Bildschirmen ändert sich die Darstellung
+        von Spalten zu Zeilen */
+    }
+}
