@@ -1,5 +1,29 @@
+/* sacramento-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/sacramento-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* babylonica-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Babylonica';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/babylonica-v5-latin/babylonica-v5-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --farbverlauf-h1: linear-gradient(90deg, rgb(34, 62, 137), rgb(0, 0, 0), black);
+}
+
 body {
     font-family: sans-serif;
+    height: 800px;
+    text-align: center;
 }
 
 .rezeptkarte-kpl {
@@ -13,20 +37,31 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(#dcf6fa, #c9bf6c60);
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto;
-    text-align: center;
-    padding: 1rem;
-    /* border: 1px solid gray; */
+    padding-top: 1rem 1rem 0 1rem;
     box-shadow: 0 0 5px black;
     border-radius: 10px;
 }
 
 h1 {
-    padding: 1rem;
-    margin: 1rem 2rem;
-    /* text-decoration: underline; */
-    border-bottom: 1px solid rgb(184, 183, 183);
+    font-family: 'Sacramento', sans-serif;
+    font-size: 50px;
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0;
+    display: inline-block;
+    background-image: var(--farbverlauf-h1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1::first-letter {
+    text-shadow: -15px -10px white;
+}
+
+.rezept p {
+    padding-top: 0.5rem;
+    margin: -1.5rem 2rem 0 2rem;
+    border-top: 1px solid gray;
 }
 
 ul {
@@ -40,22 +75,32 @@ li {
 }
 
 .getränk {
-    /* border: 1px solid gray; */
     border-radius: 5px;
     box-shadow: 0 0 3px black;
 }
 
+.blättern {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pfeil-links {
+    position: absolute;
+    left: 7%;
+    bottom: 3%;
+}
+
+.pfeil-rechts {
+    position: absolute;
+    right: 7%;
+    bottom: 3%;
+}
+
 a {
     text-decoration: none;
-    color: black;
-    /* font-weight: bold; */
-    border-bottom: 1px solid rgb(184, 183, 183);
+    color: rgba(128, 128, 128, 0.63);
+    font-size: 30px;
     display: inline-block;
-    margin-top: 1rem;
-
-    &:hover  {
-        text-shadow: 0 0 1px rgba(63, 63, 63, 0.705);
-    }
 }
 
 .bubble {
@@ -66,16 +111,16 @@ a {
 
 .bubble-1 {
     left: 15%;
-    bottom: 90%;
+    bottom: 93%;
 }
 
 .bubble-2 {
-    left: 90%;
-    bottom: 0%;
+    left: 40%;
+    bottom: 8%;
 }
 
 .bubble-3 {
-    left: 95%;
+    left: 90%;
     bottom: 75%;
 }
 
@@ -92,4 +137,88 @@ a {
 .bubble-6 {
     left: 10%;
     bottom: 35%;
+}
+
+/* .bubbles::after {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: red;
+} */
+
+footer {
+    position: relative;
+    height: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.newsletter {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.newsletter-frage {
+    text-align: left;
+}
+
+.mail-eingabe {
+    height: 20px;
+    position: relative;
+    width: 400px;
+}
+
+.mail {
+    border: none;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    height: 100%;
+    width: 340px;
+    font-size: 12px;
+    padding-left: 7px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+.send {
+    height: 100%;
+    width: 30px;
+    font-size: 12px;
+    color: gray;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+.copyright {
+    font-size: 10px;
+    color: gray;
+    padding-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
