@@ -1,0 +1,46 @@
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 50px;
+}
+
+.child {
+    padding: 0.5rem 1rem;
+    background-color: lightgreen;
+    margin: 0.5rem;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: 200px 1fr 100px 2fr;
+    grid-template-columns: 25%;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+}
+
+.container-grid div {
+    border: 1px solid black;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.three {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.four {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
