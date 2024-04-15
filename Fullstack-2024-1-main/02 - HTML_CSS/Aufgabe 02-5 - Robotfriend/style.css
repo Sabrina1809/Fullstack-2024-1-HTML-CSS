@@ -15,7 +15,7 @@ h1 {
 .right_arm, 
 .left_leg, 
 .right_leg {
-	 background-color: grey;
+	 background-color: lime;
 }
  
 .torso:hover 
@@ -31,6 +31,16 @@ h1 {
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
+
+	&:hover {
+		width: 290px;
+		transition: width 1s ease-in;
+	}
+
+	&:not(:hover) {
+		width: 200px;
+		transition: width 1s ease-out;
+	}
 } 
 
 .eyes {
@@ -81,6 +91,10 @@ h1 {
 
 .left_leg { 
 	margin-left: 45px; 
+
+	&:hover {
+		transform: rotate(20deg);
+	}
 } 
 
 
