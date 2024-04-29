@@ -1,0 +1,45 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    column-gap: 1rem;
+}
+
+.parent div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-weight: 800;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px;
+    transition: transform 3s ease-in-out;
+}
+
+.parent div:nth-child(even) {
+    background-color: fuchsia;
+}
+
+.parent div:hover {
+    transform:  scale(1.5)
+                rotate(180deg);
+    cursor: pointer;
+
+    &::after {
+    content: "\1F603";
+    font-size: 2rem;
+    }
+
+    & span {
+        display: none;
+    }
+}
+
