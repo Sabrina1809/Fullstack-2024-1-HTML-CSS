@@ -237,7 +237,7 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     background-color: rgb(235, 181, 225);
 }
 
@@ -246,21 +246,42 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: -2rem;
 }
 
+
+.neu-h1 {
+    color: rgba(255, 255, 255, 0.322);
+    -webkit-text-stroke-color: lightgray;
+    font-size: 200px;
+    margin-bottom: -10.5rem;
+    font-family: 'Zeyada';
+}
+
+.neu-h2 {
+    color: rgba(255, 255, 255, 0.742);
+    -webkit-text-stroke-color: lightgray;
+    font-size: 140px;
+    margin-top: -5rem;
+    font-family: 'Zeyada';
+}
+
+
 .card {
-    width: 17rem;
-    height: 36rem;
-    border: 1px solid gray;
-    box-shadow: 0 0 2px black;
-    border-radius: 15px;
-    padding: 1rem;
-    margin: 1rem;
+    width: 40rem;
+    height: 25rem;
+    border: 0.5px solid gray;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.658);
+    /* border-radius: 10px;
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px;  */
+    /* margin: 1rem; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     text-align: left;
-    background-image: linear-gradient(rgb(245, 236, 200), rgb(255, 255, 255));
+    background-color: rgb(255, 235, 209);
+    background-image: linear-gradient(rgba(255, 213, 157, 0.125), rgb(255, 255, 255));
 }
 
 .card:hover .img-shop {
@@ -323,54 +344,59 @@ body {
 }
 
 .name {
-    font-size: 3rem;
-    font-weight: 200;
-    margin: 0 1rem;
-    padding-top: 0.25rem;
-    text-shadow: 0px 0px 5px rgb(128, 128, 128);
+    font-family: 'Zeyada';
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    /* text-shadow: 0px 0px 5px rgb(128, 128, 128); */
     border-bottom: 1px solid rgba(128, 128, 128, 0.295);
 }
 
+
 .picture {
-    margin: 1rem;
-    width: 15rem;
+    height: 100%;
+    width: 20rem;
+    margin: 0;
+    /* scale: 0.95; */
+    /* border-radius: 10px; 
+    border-top-left-radius: 50px;  */
+    /* border-top-right-radius: 50px;  */
     border: 1px solid gray;
     box-shadow: 0px 0px 5px rgb(128, 128, 128);
 }
 
 .beschreibung {
-    margin: 0 1rem;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    margin: 2rem 1rem 2rem 2rem;
+    
 }
 
 .zeile {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-left: 1rem;
 }
 
-.zeile:last-of-type {
-    padding-bottom: 0.5rem;
+.card .beschreibung .zeile:last-of-type {
+    padding-bottom: 5rem;
 }
 
 .beschreibung-icon {
     padding-right: 1rem;
 }
 
-
-
 .beschreibung-icon img {
         width: 17px;
         height: 17px;
 }
 
-.button_zum-shop {
-    margin: 0 1rem;
+.beschreibung .button_zum-shop {
+    margin-top: 3rem;
     padding-top: 1rem;
     font-size: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.295);
     
 }
 
@@ -383,3 +409,42 @@ body {
 }
 
 
+.making-of-ctn {
+    width: 80%;
+    height: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(120, 119, 119);
+}
+
+.video-ctn {
+    width: 80%;
+    /* background-color: blue; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.making-of-h1 {
+    color: rgba(255, 255, 255, 0.322);
+    -webkit-text-stroke-color: lightgray;
+    font-size: 200px;
+    margin-bottom: -10.5rem;
+    font-family: 'Zeyada';
+}
+
+.making-of-h2 {
+    color: rgba(255, 255, 255, 0.742);
+    -webkit-text-stroke-color: lightgray;
+    font-size: 140px;
+    margin-top: -5rem;
+    font-family: 'Zeyada';
+}
+
+.making-of-video {
+    width: 80%;
+    margin-top: -4.5rem;
+    box-shadow: 0 0 3px black;
+}
