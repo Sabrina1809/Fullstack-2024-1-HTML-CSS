@@ -441,6 +441,10 @@ body {
     & .beschreibung {
         padding-right: 2rem;
     }
+
+    & p {
+        text-align: justify;
+    }
 }
 
 
